@@ -1,6 +1,6 @@
           body {
               margin: 0 auto;
-              max-width: 670px;
+              max-width: 690px;
               background: #232323;
               background: black;
               color: #aaaaaa;
@@ -11,6 +11,30 @@
               height: 0px;
           }
           
+          .leftContainer {
+              float: left;
+              max-width: 80px;
+              height: 120px;
+              width: 80px;
+              margin: 0px;
+              position: relative;
+              position: fixed;
+          }
+          
+          .fixedNavbar {
+              position: absolute;
+              height: 100%;
+          }
+          
+          .rightContainer {
+              margin-left: 80px;
+          }
+          
+          ul {
+              list-style: none;
+              padding: 0;
+          }
+          
           div {
               height: 200px;
               background-size: cover;
@@ -18,6 +42,7 @@
               margin: 40px 0 0 0;
               border-radius: 12px;
               opacity: 0.88;
+              -moz-transition: .7s;
               transition: .7s;
               -webkit-transition: .7s;
           }
@@ -48,8 +73,7 @@
               -webkit-transition: .7s;
           }
           
-          h4
-           {
+          h4 {
               color: green;
               font-family: 'Raleway', sans-serif;
               text-align: center;
@@ -265,7 +289,6 @@
           }
           
           .priceTable tr:first-child {
-              background-color: white;
               color: black;
               font-weight: bold;
           }
@@ -353,5 +376,12 @@
               }
               html body div.theHotelDesc div p {
                   height: 500px;
+              }
+              .leftContainer {
+                  font-size: 13px;
+                  width: 60px;
+              }
+              .rightContainer {
+                  margin-left: 55px;
               }
           }
