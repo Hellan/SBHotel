@@ -7,12 +7,16 @@
     <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/css?family=Dancing+Script:700|EB+Garamond" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="css/sbhotel.css" />
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js "></script>
+    <script src="js/uikit.min.js"></script>
+    </script>
     <title> South Beach Hotel </title>
 </head>
 
 <body>
     <div class="leftContainer">
-        <ul class="fixedNavbar">
+        <ul class="uk-nav uk-nav-side" data-uk-scrollspy-nav>
             <li><a href="#theHotel">The Hotel</a></li>
             <li><a href="#rooms">Rooms</a></li>
             <li><a href="#priceList">Price List</a></li>
@@ -37,477 +41,485 @@
         <h2 class="textSize">The Hotel</h2>
         <div class="theHotelPic">
         </div>
-        <a name="theHotel"></a>
-        <div class="theHotelDesc">
-            <div>
-                <p> South Beach hotel was built in a romantic resort at the Black Sea-Kiten Resort. It is situated near one of the central street, and is only about 400m from the beach. The hotel offers its guests a variety of accommodation: two single rooms, nine double rooms, four three-bed rooms, and five apartments. The rooms are equipped with magnetic locking cards, air- conditioner,TV, fridge and Internet. South Beach hotel has a large panoramic terrace. The hotel offers to its guests rent-a-bike and rent-a-car services and organizes horse riding tours, tours to other resorts in the district and to the local natural and historical sight.</p>
-            </div>
-            <br>
-            <br>
-            <br>
-            <div class="checkText">
-                <strong> Check-in: </strong> 14:00 - 22:00 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <strong> Check-out:</strong> 08:00 - 12:00
-                <br> Family Friendly Hotel: One child up to 7 years stays <strong> FREE OF CHARGE </strong> when using existing beds.
-                <br> FREE WIFI
-            </div>
-        </div>
-        <div class="faceBookAndWifi">
-            <h3 class="widget-title"></h3>
-            <div id="fb-root">
-                <img class="wifi" src="img/wifi.jpg"></div>
-            <script>
-            (function(d) {
-                var js, id = 'facebook-jssdk';
-                if (d.getElementById(id)) {
-                    return;
-                }
-                js = d.createElement('script');
-                js.id = id;
-                js.async = true;
-                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
-                d.getElementsByTagName('head')[0].appendChild(js);
-            }(document));
-            </script>
-            <div class="sfp-container">
-                <div fb-iframe-plugin-query="app_id=&amp;container_width=246&amp;hide_cover=false&amp;https%3A%2F%2Fwww.facebook.com%2Fpages%2FSouth-Beach-Hotel%2F206504126072442%3Ffref%3Dts&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=false" fb-xfbml-state="rendered" class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/pages/South-Beach-Hotel/206504126072442?fref=ts" data-width="" data-height="" data-hide-cover="false" data-show-facepile="true" data-show-posts="false">
-                    <span style="vertical-align: bottom; width: 246px; height: 500px;"><iframe class="" src="http://www.facebook.com/v2.4/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FxRlIuTsSMoE.js%3Fversion%3D41%23cb%3Dfec0231e42437a%26domain%3D%26origin%3Dfile%253A%252F%252F%252Ff6e87739ac6516%26relation%3Dparent.parent&amp;container_width=1350&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FSouth-Beach-Hotel%2F206504126072442%3Ffref%3Dts&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=false" style="border: medium none; visibility: visible; width: 246px; height: 500px;" title="fb:page Facebook Social Plugin" scrolling="no" allowfullscreen="true" allowtransparency="true" name="f2be967eeb0052" frameborder="0" height="1000px" width="1000px"></iframe></span></div>
-            </div>
-        </div>
-        <a name="rooms"></a>
-        <div class="roomsHeader">
-            <h2 class="textSize">Rooms</h2>
-        </div>
-        <div class="room1 ">
-            <p>Double Room First Floor <span class="price ">from &euro;7.69 </span>
+        <!-- <a name="theHotel"></a> -->
+        <div id="theHotel">
+            <div class="theHotelDesc">
+                <div>
+                    <p> South Beach hotel was built in a romantic resort at the Black Sea-Kiten Resort. It is situated near one of the central street, and is only about 400m from the beach. The hotel offers its guests a variety of accommodation: two single rooms, nine double rooms, four three-bed rooms, and five apartments. The rooms are equipped with magnetic locking cards, air- conditioner,TV, fridge and Internet. South Beach hotel has a large panoramic terrace. The hotel offers to its guests rent-a-bike and rent-a-car services and organizes horse riding tours, tours to other resorts in the district and to the local natural and historical sight.</p>
+                </div>
                 <br>
-                <small>Great room. Comfortable bed, tv, air conditioning.</small>
-            </p>
-        </div>
-        <div class="room2 ">
-            <p>Double Room Second Floor <span class="price "> from &euro;15.38 </span>
                 <br>
-                <small>Great room. Comfortable bed, tv, air conditioning.</small>
-            </p>
-        </div>
-        <div class="room3 ">
-            <p>Double Room Third Floor <span class="price ">from &euro;19.49 </span>
                 <br>
-                <small>Great room. Comfortable bed, tv, air conditioning.</small>
-            </p>
+                <div class="checkText">
+                    <strong> Check-in: </strong> 14:00 - 22:00 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <strong> Check-out:</strong> 08:00 - 12:00
+                    <br> Family Friendly Hotel: One child up to 7 years stays <strong> FREE OF CHARGE </strong> when using existing beds.
+                    <br> FREE WIFI
+                </div>
+            </div>
+            <div class="faceBookAndWifi">
+                <h3 class="widget-title"></h3>
+                <div id="fb-root">
+                    <img class="wifi" src="img/wifi.jpg"></div>
+                <script>
+                (function(d) {
+                    var js, id = 'facebook-jssdk';
+                    if (d.getElementById(id)) {
+                        return;
+                    }
+                    js = d.createElement('script');
+                    js.id = id;
+                    js.async = true;
+                    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+                    d.getElementsByTagName('head')[0].appendChild(js);
+                }(document));
+                </script>
+                <div class="sfp-container">
+                    <div fb-iframe-plugin-query="app_id=&amp;container_width=246&amp;hide_cover=false&amp;https%3A%2F%2Fwww.facebook.com%2Fpages%2FSouth-Beach-Hotel%2F206504126072442%3Ffref%3Dts&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=false" fb-xfbml-state="rendered" class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/pages/South-Beach-Hotel/206504126072442?fref=ts" data-width="" data-height="" data-hide-cover="false" data-show-facepile="true" data-show-posts="false">
+                        <span style="vertical-align: bottom; width: 246px; height: 500px;"><iframe class="" src="http://www.facebook.com/v2.4/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FxRlIuTsSMoE.js%3Fversion%3D41%23cb%3Dfec0231e42437a%26domain%3D%26origin%3Dfile%253A%252F%252F%252Ff6e87739ac6516%26relation%3Dparent.parent&amp;container_width=1350&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FSouth-Beach-Hotel%2F206504126072442%3Ffref%3Dts&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=false" style="border: medium none; visibility: visible; width: 246px; height: 500px;" title="fb:page Facebook Social Plugin" scrolling="no" allowfullscreen="true" allowtransparency="true" name="f2be967eeb0052" frameborder="0" height="1000px" width="1000px"></iframe></span></div>
+                </div>
+            </div>
         </div>
-        <a name="priceList"></a>
-        <div class="priceTable ">
-            <h2 class="textSize ">Price List</h2>
-            <table>
-                <tbody>
-                    <tr>
-                        <td>
-                            <div>
-                                Rooms
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                Size (m2)
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                Person
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                15.06-30.06
-                                <br> 01.09-15.09
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                01.07-18.07
-                                <br> 21.08-31.08
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                19.07-20.08</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div> 101*</div>
-                        </td>
-                        <td>
-                            <div><span>16</span></div>
-                        </td>
-                        <td>
-                            <div>
+        <!-- <a name="rooms"></a> -->
+        <div id="rooms">
+            <div class="roomsHeader">
+                <h2 class="textSize">Rooms</h2>
+            </div>
+            <div class="room1 ">
+                <p>Double Room First Floor <span class="price ">from &euro;7.69 </span>
+                    <br>
+                    <small>Great room. Comfortable bed, tv, air conditioning.</small>
+                </p>
+            </div>
+            <div class="room2 ">
+                <p>Double Room Second Floor <span class="price "> from &euro;15.38 </span>
+                    <br>
+                    <small>Great room. Comfortable bed, tv, air conditioning.</small>
+                </p>
+            </div>
+            <div class="room3 ">
+                <p>Double Room Third Floor <span class="price ">from &euro;19.49 </span>
+                    <br>
+                    <small>Great room. Comfortable bed, tv, air conditioning.</small>
+                </p>
+            </div>
+        </div>
+        <div id="priceList">
+            <!-- <a name="priceList"></a> -->
+            <div class="priceTable ">
+                <h2 class="textSize ">Price List</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
                                 <div>
-                                    1
-                                    <br> 2
-                                    </p>
+                                    Rooms
                                 </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div> 7.69 &euro;
-                                <br> 10.26 &euro; </div>
-                        </td>
-                        <td>
-                            <div> 9.23 &euro;
-                                <br> 12.31 &euro;</div>
-                        </td>
-                        <td>
-                            <div> 11.54 &euro;
-                                <br> 15.38 &euro; </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div> 102*</div>
-                        </td>
-                        <td>
-                            <div><span>21</span></div>
-                        </td>
-                        <td>
-                            <div>
-                                <div>2</div>
-                            </div>
-                        </td>
-                        <td>
-                            <div>12.31 &euro;</div>
-                        </td>
-                        <td>
-                            <div>15.38 &euro;</div>
-                        </td>
-                        <td>
-                            <div>19.49 &euro;</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div> 103*</div>
-                        </td>
-                        <td>
-                            <div><span>21</span></div>
-                        </td>
-                        <td>
-                            <div>
+                            </td>
+                            <td>
                                 <div>
-                                    2
-                                    <br> 3
+                                    Size (m2)
                                 </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div>12.31 &euro;
-                                <br> 15.38 &euro;</div>
-                        </td>
-                        <td>
-                            <div>15.38 &euro;
-                                <br> 18.46 &euro;</div>
-                        </td>
-                        <td>
-                            <div>19.49 &euro;
-                                <br> 23.08 &euro;</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div> 201(301)</div>
-                        </td>
-                        <td>
-                            <div><span>29</span></div>
-                        </td>
-                        <td>
-                            <div>
-                                <div>2
-                                    <br> 2+1
+                            </td>
+                            <td>
+                                <div>
+                                    Person
                                 </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div>15.38 &euro;
-                                <br> 19.49 &euro;</div>
-                        </td>
-                        <td>
-                            <div>19.49 &euro;
-                                <br> 24.62 &euro;</div>
-                        </td>
-                        <td>
-                            <div>24.62 &euro;
-                                <br> 30.77 &euro;</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div> 202(302)</div>
-                        </td>
-                        <td>
-                            <div><span>23</span></div>
-                        </td>
-                        <td>
-                            <div>
-                                <div> 2</div>
-                            </div>
-                        </td>
-                        <td>
-                            <div>15.38 &euro;</div>
-                        </td>
-                        <td>
-                            <div> 19.49 &euro;</div>
-                        </td>
-                        <td>
-                            <div>
-                                <div>24.62 &euro;</div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div> 203(303)</div>
-                        </td>
-                        <td>
-                            <div><span>20</span></div>
-                        </td>
-                        <td>
-                            <div>
-                                <div> 2</div>
-                            </div>
-                        </td>
-                        <td>
-                            <div>15.38 &euro;</div>
-                        </td>
-                        <td>
-                            <div> 19.49 &euro;</div>
-                        </td>
-                        <td>
-                            <div>
-                                <div>24.62 &euro;</div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div> 204(304)</div>
-                        </td>
-                        <td>
-                            <div><span>23</span></div>
-                        </td>
-                        <td>
-                            <div>
-                                <div> 2</div>
-                            </div>
-                        </td>
-                        <td>
-                            <div>15.38 &euro;</div>
-                        </td>
-                        <td>
-                            <div> 19.49 &euro;</div>
-                        </td>
-                        <td>
-                            <div>
-                                <div>24.62 &euro;</div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div> 205(305)</div>
-                        </td>
-                        <td>
-                            <div><span>23</span></div>
-                        </td>
-                        <td>
-                            <div>
-                                <div> 2</div>
-                            </div>
-                        </td>
-                        <td>
-                            <div>15.38 &euro;</div>
-                        </td>
-                        <td>
-                            <div> 19.49 &euro;</div>
-                        </td>
-                        <td>
-                            <div>
-                                <div>24.62 &euro;</div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div> 206(306)</div>
-                        </td>
-                        <td>
-                            <div><span>38</span></div>
-                        </td>
-                        <td>
-                            <div>
-                                <div>2+1
-                                    <br> 2+2
+                            </td>
+                            <td>
+                                <div>
+                                    15.06-30.06
+                                    <br> 01.09-15.09
                                 </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div>19.49 &euro;
-                                <br> 22.56 &euro;</div>
-                        </td>
-                        <td>
-                            <div>24.62 &euro;
-                                <br> 28.72 &euro;</div>
-                        </td>
-                        <td>
-                            <div>30.77 &euro;
-                                <br> 34.87 &euro;</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div> 207(307)* </div>
-                        </td>
-                        <td>
-                            <div><span></span></div>
-                        </td>
-                        <td>
-                            <div>
-                                <div>1</div>
-                            </div>
-                        </td>
-                        <td>
-                            <div>7.69 &euro; </div>
-                        </td>
-                        <td>
-                            <div>9.74 &euro; </div>
-                        </td>
-                        <td>
-                            <div>
-                                <div>12.31 &euro; </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div> 401</div>
-                        </td>
-                        <td>
-                            <div><span>24</span></div>
-                        </td>
-                        <td>
-                            <div>
-                                <div>2
-                                    <br> 2+1
+                            </td>
+                            <td>
+                                <div>
+                                    01.07-18.07
+                                    <br> 21.08-31.08
                                 </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div>15.38 &euro;
-                                <br> 19.49 &euro;</div>
-                        </td>
-                        <td>
-                            <div>19.49 &euro;
-                                <br> 24.62 &euro;</div>
-                        </td>
-                        <td>
-                            <div>24.62 &euro;
-                                <br> 30.77 &euro;</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div> 402</div>
-                        </td>
-                        <td>
-                            <div><span>15</span></div>
-                        </td>
-                        <td>
-                            <div>
-                                <div>1
-                                    <br> 2
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div>7.69 &euro;
-                                <br> 11.79 &euro;</div>
-                        </td>
-                        <td>
-                            <div>9.74 &euro;
-                                <br> 14.87 &euro;</div>
-                        </td>
-                        <td>
-                            <div>12.31 &euro;
-                                <br> 18.46 &euro;</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div> 403</div>
-                        </td>
-                        <td>
-                            <div><span>43</span></div>
-                        </td>
-                        <td>
-                            <div>
-                                <div>2+1
-                                    <br> 2+2
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div>19.49 &euro;
-                                <br> 23.59 &euro;</div>
-                        </td>
-                        <td>
-                            <div>24.62 &euro;
-                                <br> 29.74 &euro;</div>
-                        </td>
-                        <td>
-                            <div>30.77 &euro;
-                                <br>36.92 &euro;</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div> 404</div>
-                        </td>
-                        <td>
-                            <div><span>33</span></div>
-                        </td>
-                        <td>
-                            <div>
+                            </td>
+                            <td>
+                                <div>
+                                    19.07-20.08</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div> 101*</div>
+                            </td>
+                            <td>
+                                <div><span>16</span></div>
+                            </td>
+                            <td>
                                 <div>
                                     <div>
-                                        <div>2
-                                            <br> 2+1
+                                        1
+                                        <br> 2
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div> 7.69 &euro;
+                                    <br> 10.26 &euro; </div>
+                            </td>
+                            <td>
+                                <div> 9.23 &euro;
+                                    <br> 12.31 &euro;</div>
+                            </td>
+                            <td>
+                                <div> 11.54 &euro;
+                                    <br> 15.38 &euro; </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div> 102*</div>
+                            </td>
+                            <td>
+                                <div><span>21</span></div>
+                            </td>
+                            <td>
+                                <div>
+                                    <div>2</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div>12.31 &euro;</div>
+                            </td>
+                            <td>
+                                <div>15.38 &euro;</div>
+                            </td>
+                            <td>
+                                <div>19.49 &euro;</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div> 103*</div>
+                            </td>
+                            <td>
+                                <div><span>21</span></div>
+                            </td>
+                            <td>
+                                <div>
+                                    <div>
+                                        2
+                                        <br> 3
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div>12.31 &euro;
+                                    <br> 15.38 &euro;</div>
+                            </td>
+                            <td>
+                                <div>15.38 &euro;
+                                    <br> 18.46 &euro;</div>
+                            </td>
+                            <td>
+                                <div>19.49 &euro;
+                                    <br> 23.08 &euro;</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div> 201(301)</div>
+                            </td>
+                            <td>
+                                <div><span>29</span></div>
+                            </td>
+                            <td>
+                                <div>
+                                    <div>2
+                                        <br> 2+1
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div>15.38 &euro;
+                                    <br> 19.49 &euro;</div>
+                            </td>
+                            <td>
+                                <div>19.49 &euro;
+                                    <br> 24.62 &euro;</div>
+                            </td>
+                            <td>
+                                <div>24.62 &euro;
+                                    <br> 30.77 &euro;</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div> 202(302)</div>
+                            </td>
+                            <td>
+                                <div><span>23</span></div>
+                            </td>
+                            <td>
+                                <div>
+                                    <div> 2</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div>15.38 &euro;</div>
+                            </td>
+                            <td>
+                                <div> 19.49 &euro;</div>
+                            </td>
+                            <td>
+                                <div>
+                                    <div>24.62 &euro;</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div> 203(303)</div>
+                            </td>
+                            <td>
+                                <div><span>20</span></div>
+                            </td>
+                            <td>
+                                <div>
+                                    <div> 2</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div>15.38 &euro;</div>
+                            </td>
+                            <td>
+                                <div> 19.49 &euro;</div>
+                            </td>
+                            <td>
+                                <div>
+                                    <div>24.62 &euro;</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div> 204(304)</div>
+                            </td>
+                            <td>
+                                <div><span>23</span></div>
+                            </td>
+                            <td>
+                                <div>
+                                    <div> 2</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div>15.38 &euro;</div>
+                            </td>
+                            <td>
+                                <div> 19.49 &euro;</div>
+                            </td>
+                            <td>
+                                <div>
+                                    <div>24.62 &euro;</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div> 205(305)</div>
+                            </td>
+                            <td>
+                                <div><span>23</span></div>
+                            </td>
+                            <td>
+                                <div>
+                                    <div> 2</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div>15.38 &euro;</div>
+                            </td>
+                            <td>
+                                <div> 19.49 &euro;</div>
+                            </td>
+                            <td>
+                                <div>
+                                    <div>24.62 &euro;</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div> 206(306)</div>
+                            </td>
+                            <td>
+                                <div><span>38</span></div>
+                            </td>
+                            <td>
+                                <div>
+                                    <div>2+1
+                                        <br> 2+2
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div>19.49 &euro;
+                                    <br> 22.56 &euro;</div>
+                            </td>
+                            <td>
+                                <div>24.62 &euro;
+                                    <br> 28.72 &euro;</div>
+                            </td>
+                            <td>
+                                <div>30.77 &euro;
+                                    <br> 34.87 &euro;</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div> 207(307)* </div>
+                            </td>
+                            <td>
+                                <div><span></span></div>
+                            </td>
+                            <td>
+                                <div>
+                                    <div>1</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div>7.69 &euro; </div>
+                            </td>
+                            <td>
+                                <div>9.74 &euro; </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <div>12.31 &euro; </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div> 401</div>
+                            </td>
+                            <td>
+                                <div><span>24</span></div>
+                            </td>
+                            <td>
+                                <div>
+                                    <div>2
+                                        <br> 2+1
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div>15.38 &euro;
+                                    <br> 19.49 &euro;</div>
+                            </td>
+                            <td>
+                                <div>19.49 &euro;
+                                    <br> 24.62 &euro;</div>
+                            </td>
+                            <td>
+                                <div>24.62 &euro;
+                                    <br> 30.77 &euro;</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div> 402</div>
+                            </td>
+                            <td>
+                                <div><span>15</span></div>
+                            </td>
+                            <td>
+                                <div>
+                                    <div>1
+                                        <br> 2
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div>7.69 &euro;
+                                    <br> 11.79 &euro;</div>
+                            </td>
+                            <td>
+                                <div>9.74 &euro;
+                                    <br> 14.87 &euro;</div>
+                            </td>
+                            <td>
+                                <div>12.31 &euro;
+                                    <br> 18.46 &euro;</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div> 403</div>
+                            </td>
+                            <td>
+                                <div><span>43</span></div>
+                            </td>
+                            <td>
+                                <div>
+                                    <div>2+1
+                                        <br> 2+2
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div>19.49 &euro;
+                                    <br> 23.59 &euro;</div>
+                            </td>
+                            <td>
+                                <div>24.62 &euro;
+                                    <br> 29.74 &euro;</div>
+                            </td>
+                            <td>
+                                <div>30.77 &euro;
+                                    <br>36.92 &euro;</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div> 404</div>
+                            </td>
+                            <td>
+                                <div><span>33</span></div>
+                            </td>
+                            <td>
+                                <div>
+                                    <div>
+                                        <div>
+                                            <div>2
+                                                <br> 2+1
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div>15.38 &euro;
-                                <br> 19.49 &euro;</div>
-                        </td>
-                        <td>
-                            <div>19.49 &euro;
-                                <br> 24.62 &euro;</div>
-                        </td>
-                        <td>
-                            <div>24.62 &euro;
-                                <br> 30.77 &euro;</div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                            </td>
+                            <td>
+                                <div>15.38 &euro;
+                                    <br> 19.49 &euro;</div>
+                            </td>
+                            <td>
+                                <div>19.49 &euro;
+                                    <br> 24.62 &euro;</div>
+                            </td>
+                            <td>
+                                <div>24.62 &euro;
+                                    <br> 30.77 &euro;</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-        <a name="contacts"></a>
-        <div class="contacts">
-            <h2>Contacts</h2>
-            <h4>  email: reception@southbeachbg.com  </h4>
-            <a href="tel:0035955036065">
-                <h4> Phone Number: 00359 550 3 60 65  </h4> </a>
-            <h4> Address: ul. "Lulin" 6, 8183 Kiten, Bulgaria </h4>
+        <!-- <a name="contacts"></a> -->
+        <div id="contacts">
+            <div class="contacts">
+                <h2>Contacts</h2>
+                <h4>  email: reception@southbeachbg.com  </h4>
+                <a href="tel:0035955036065">
+                    <h4> Phone Number: 00359 550 3 60 65  </h4> </a>
+                <h4> Address: ul. "Lulin" 6, 8183 Kiten, Bulgaria </h4>
+            </div>
         </div>
         <div id="contactsMap">
             <h2 class="textSize">Map</h2>
@@ -538,7 +550,6 @@
 
     google.maps.event.addDomListener(window, 'load', init_map);
     </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js "></script>
     <script src="js/sbhotel.js"></script>
 </body>
 

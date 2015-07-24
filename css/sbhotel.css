@@ -26,8 +26,13 @@
               height: 100%;
           }
           
+          #rooms {
+              height: 800px;
+          }
+          
           .rightContainer {
               margin-left: 80px;
+              width: 670px;
           }
           
           ul {
@@ -51,6 +56,10 @@
               height: 800px;
               border-radius: 3%;
               font-size: 14px;
+          }
+          
+          #priceList {
+              height: 810px;
           }
           
           .textSize {
@@ -101,6 +110,10 @@
               font-family: 'Dancing Script', cursive;
           }
           
+          .uk-active {
+              color: green;
+          }
+          
           html body div.theHotelPic h2 {
               color: black;
               font-weight: bold;
@@ -132,6 +145,10 @@
               height: 380px;
               font-family: 'Raleway', sans-serif;
               opacity: 1.0;
+          }
+          
+          #theHotel {
+              height: 700px;
           }
           
           p:hover {
@@ -256,6 +273,10 @@
               height: 238px;
           }
           
+          #contacts {
+              height: 240px;
+          }
+          
           html body div#map_canvas {
               opacity: 1.0 !important;
               height: 660px !important;
@@ -293,7 +314,7 @@
               font-weight: bold;
           }
           
-          @media (max-width: 500px) {
+          @media (max-width: 550px) {
               h1 {
                   font-size: 50px;
                   margin-top: 20px;
@@ -311,6 +332,12 @@
               div {
                   margin: 20px 12px 0 12px;
               }
+              html.uk-notouch body div.rightContainer div.headerPic,
+              html.uk-notouch body div.rightContainer div.theHotelPic
+               {
+                  width: 490px;
+                  margin-left: 30px;
+              }
               .room1:hover {
                   height: 250px;
               }
@@ -327,7 +354,7 @@
               small {
                   font-size: 16px;
               }
-              html body div.theHotelPic h2 {
+              body div.theHotelPic h2 {
                   font-size: 30px;
                   font-weight: bold;
               }
@@ -336,7 +363,7 @@
                   width: 100px;
               }
               .map {
-                  width: 350px !important;
+                  width: 400px !important;
                   height: 400px !important;
               }
               html body div.priceTable table tbody tr td div {
@@ -349,7 +376,7 @@
                   margin-bottom: 15px;
                   text-align: center;
               }
-              html body div.priceTable table tbody tr:first-child {
+              .priceTable table tbody tr:first-child {
                   font-size: 12px;
                   color: white;
                   font-weight: bold;
@@ -357,8 +384,10 @@
                   width: 44px;
                   background-color: black;
               }
-              html body div.priceTable {
+              #priceList {
                   height: 1200px;
+              }
+              html.uk-notouch body div.rightContainer div#priceList div.priceTable table {
                   font-size: 12px;
               }
               .theHotelDesc {
@@ -374,14 +403,21 @@
                   font-size: 12px;
                   height: 40px;
               }
-              html body div.theHotelDesc div p {
+              .theHotelDesc div p {
                   height: 500px;
               }
               .leftContainer {
                   font-size: 13px;
-                  width: 60px;
+                  width: 35px;
+              }
+              #theHotel {
+                  height: 900px;
+              }
+              .wifi {
+                  display: none;
               }
               .rightContainer {
-                  margin-left: 55px;
+                  width: 490px;
+                  margin-left: 35px;
               }
           }
