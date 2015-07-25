@@ -1271,13 +1271,11 @@ ul.uk-nav-sub {
 .uk-nav-side>li>a:focus,
 .uk-nav-side>li>a:hover {
     background: rgba(0, 0, 0, .05);
-    color: #444;
     outline: 0
 }
 
 .uk-nav-side>li.uk-active>a {
     background: #00a8e6;
-    color: #fff
 }
 
 .uk-nav-side .uk-nav-header {
