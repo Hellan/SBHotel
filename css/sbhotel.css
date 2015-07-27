@@ -347,6 +347,13 @@
                   border-radius: 40%;
               }
               
+              .weatherKiten {
+                  opacity: 1 !important;
+                  height: 320px;
+                  border-top: 1px solid whitesmoke;
+                  border-radius: 0%;
+              }
+              
               @media (max-width: 550px) {
                   h1 {
                       font-size: 50px;
@@ -450,9 +457,7 @@
                       width: 490px;
                       margin-left: 35px;
                   }
-                  .aboutKiten {
-                      height: 900px;
-                  }
+                
                   #contacts {
                       height: 280px;
                       font-size: 15px;
@@ -467,4 +472,8 @@
                       width: 440px;
                       height: 915px;
                   }
+                  .weatherKiten{
+                    width: 440px;
+                  }
+
               }
