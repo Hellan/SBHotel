@@ -7,10 +7,12 @@
     <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/css?family=Dancing+Script:700|EB+Garamond" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="css/sbhotel.css" />
+    <link rel="stylesheet" type="text/css" href="css/slideshow.css" />
     <link rel="stylesheet" href="css/uikit.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js "></script>
     <script src="js/uikit.min.js"></script>
-    </script>
+    <script src="js/slideshow.min.js"></script>
+    <script src="js/slideshow-fx.js"></script>
     <title> South Beach Hotel </title>
 </head>
 
@@ -41,7 +43,48 @@
         <h2>a Cosy Family Hotel in Kiten</h2>
         <div class="headerPic"> </div>
         <h2 class="textSize">The Hotel</h2>
-        <div class="theHotelPic">
+        <div class="theHotelPic" data-uk-slideshow="{autoplay:true}">
+            <ul class="uk-slideshow">
+                <li>
+                    <img width="670" height="400" alt="" src="img/theHotel1.jpg" style="width: 100%; height: auto;"></li>
+                <li>
+                    <img width="670" height="400" alt="" src="img/theHotel2.jpg" style="width: 100%; height: auto;"></li>
+                <li>
+                    <img width="670" height="400" alt="" src="img/theHotel3.jpg" style="width: 100%; height: auto;"></li>
+                <li>
+                    <img width="670" height="400" alt="" src="img/theHotel4.jpg" style="width: 100%; height: auto;"></li>
+                <li>
+                    <img width="670" height="400" alt="" src="img/theHotel5.jpg" style="width: 100%; height: auto;"></li>
+                <li>
+                    <img width="670" height="400" alt="" src="img/theHotel6.jpg" style="width: 100%; height: auto;"></li>
+                <li>
+                    <img width="670" height="400" alt="" src="img/theHotel7.jpg" style="width: 100%; height: auto;"></li>
+            </ul>
+            <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
+            <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
+            <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center">
+                <li data-uk-slideshow-item="0">
+                    <a href=""></a>
+                </li>
+                <li data-uk-slideshow-item="1">
+                    <a href=""></a>
+                </li>
+                <li data-uk-slideshow-item="2">
+                    <a href=""></a>
+                </li>
+                <li data-uk-slideshow-item="3">
+                    <a href=""></a>
+                </li>
+                <li data-uk-slideshow-item="4">
+                    <a href=""></a>
+                </li>
+                <li data-uk-slideshow-item="5">
+                    <a href=""></a>
+                </li>
+                <li data-uk-slideshow-item="6">
+                    <a href=""></a>
+                </li>
+            </ul>
         </div>
         <div class="theHotelDesc" id="theHotel">
             <div>
@@ -519,22 +562,23 @@
         </div>
         <div class="weatherKiten" id="weatherKiten">
             <h2 class="textSize"> The Weatherforecast for Kiten </h2>
-            <div >
+            <div>
                 <object type="application/x-shockwave-flash" data="http://swf.yowindow.com/yowidget3.swf" width="670" height="200">
                     <param name="movie" value="http://swf.yowindow.com/yowidget3.swf" />
                     <param name="allowfullscreen" value="true" />
                     <param name="wmode" value="opaque" />
                     <param name="bgcolor" value="#FFFFFF" />
-                    <param name="flashvars" value="location_id=gn:730338&amp;location_name=Kiten,Bulgaria&amp;landscape=seaside&amp;time_format=12&amp;unit_system=metric&amp;background=#FFFFFF&amp;mini_action=window&amp;copyright_bar=false" />
+                    <param name="flashvars" value="location_id=gn:730338&amp;location_name=Kiten,Bulgaria Weather Forecast&amp;landscape=seaside&amp;time_format=12&amp;unit_system=metric&amp;background=#FFFFFF&amp;mini_action=window&amp;copyright_bar=false" />
                     <a href="http://WeatherScreenSaver.com?client=widget&amp;link=copyright" style="width:670px;height:200px;display: block;text-indent: -50000px;font-size: 0px;background:#DDF url(http://yowindow.com/img/logo.png) no-repeat scroll 50% 50%;">HTML weather</a>
                 </object>
             </div>
-           
         </div>
         <div class="contacts" id="contacts">
             <h2>Contacts</h2>
             <a href="https://www.facebook.com/pages/South-Beach-Hotel/206504126072442?ref=ts&fref=ts"> <img src="img/fbIcon.jpg"></a>
             <h4>  email: reception@southbeachbg.com  </h4>
+            <a href="tel:003595878868415">
+                <h4> Mobile Number: 00359 87 886 8415 </h4> </a>
             <a href="tel:0035955036065">
                 <h4> Phone Number: 00359 550 3 60 65  </h4> </a>
             <h4> Address: ul. "Lulin" 6, 8183 Kiten, Bulgaria </h4>

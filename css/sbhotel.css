@@ -31,7 +31,7 @@
               }
               
               #rooms {
-                  height: 800px;
+                  height: 900px;
                   border-top: 1px solid whitesmoke;
                   border-radius: 0%;
               }
@@ -124,6 +124,8 @@
                   color: black;
                   font-weight: bold;
               }
+
+              
               
               .roomsText {
                   height: 80px;
@@ -139,6 +141,7 @@
                   height: 250px;
                   background-color: black;
                   opacity: 1.0;
+                  margin-left:10px;
               }
               
               .wifi {
@@ -151,6 +154,8 @@
                   height: 380px;
                   font-family: 'Raleway', sans-serif;
                   opacity: 1.0;
+                  width: 670px;
+                  margin-left:10px;
               }
               
               p:hover {
@@ -192,13 +197,18 @@
               }
               
               .theHotelPic {
-                  background-image: url("../img/sb.jpg");
-                  height: 420px;
+                  height: 430px;
                   opacity: 0.9;
+                  width: 670px;
+                  margin-left:10px;
+              }
+
+              .uk-cover-background{
+                height: 400px;
               }
               
               .room1 {
-                  background-image: url("http://r-ec.bstatic.com/images/hotel/840x460/505/50561338.jpg");
+                  background-image: url("../img/room1.jpg");
                   transition: .7s;
                   -webkit-transition: .7s;
               }
@@ -206,12 +216,14 @@
               .room1:hover {
                   height: 360px;
                   transition: .7s;
+                  -moz-transition: .7s;
                   -webkit-transition: .7s;
               }
               
               .room2 {
                   background-image: url("../img/room2.jpg");
                   transition: .7s;
+                  -moz-transition: .7s;
                   -webkit-transition: .7s;
               }
               
@@ -240,19 +252,22 @@
               
               .room2:hover {
                   height: 360px;
+                  -moz-transition: .7s;
                   transition: .7s;
                   -webkit-transition: .7s;
               }
               
               .room3 {
                   background-image: url("../img/room3.jpg");
+                  -moz-transition: .7s;
                   transition: .7s;
                   -webkit-transition: .7s;
               }
               
               .room3:hover {
-                  height: 360px;
+                  height: 350px;
                   transition: .7s;
+                  -moz-transition: .7s;
                   -webkit-transition: .7s;
               }
               
@@ -271,11 +286,10 @@
               
               .contacts {
                   border-top: 1px solid whitesmoke;
-                  height: 238px;
               }
               
               #contacts {
-                  height: 240px;
+                  height: 285px;
               }
               
               html body div#map_canvas {
@@ -377,6 +391,10 @@
                       width: 422px;
                       margin-left: 30px;
                   }
+
+                  .theHotelPic{
+                    height: 300px;
+                  }
                   .room1:hover {
                       height: 250px;
                   }
@@ -389,6 +407,10 @@
                   p {
                       font-size: 16px;
                       line-height: 24px;
+                  }
+
+                  html.uk-notouch body div.rightContainer div#theHotel.theHotelDesc{
+                    width: 450px;
                   }
                   small {
                       font-size: 16px;
@@ -457,7 +479,6 @@
                       width: 490px;
                       margin-left: 35px;
                   }
-                
                   #contacts {
                       height: 280px;
                       font-size: 15px;
@@ -472,8 +493,7 @@
                       width: 440px;
                       height: 915px;
                   }
-                  .weatherKiten{
-                    width: 440px;
+                  .weatherKiten {
+                      width: 440px;
                   }
-
               }
