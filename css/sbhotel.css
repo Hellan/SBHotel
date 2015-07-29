@@ -7,10 +7,6 @@
                   font-family: 'Raleway', sans-serif;
               }
               
-              #fb-root {
-                  height: 0px;
-              }
-              
               .leftContainer {
                   float: left;
                   max-width: 80px;
@@ -20,10 +16,10 @@
                   position: relative;
                   position: fixed;
               }
-
-              .flag{
-                height:16px;
-                width: 24px;
+              
+              .flag {
+                  height: 16px;
+                  width: 24px;
               }
               
               .fixedNavbar {
@@ -129,8 +125,6 @@
                   color: black;
                   font-weight: bold;
               }
-
-              
               
               .roomsText {
                   height: 80px;
@@ -146,7 +140,7 @@
                   height: 250px;
                   background-color: black;
                   opacity: 1.0;
-                  margin-left:10px;
+                  margin-left: 10px;
               }
               
               .wifi {
@@ -160,7 +154,7 @@
                   font-family: 'Raleway', sans-serif;
                   opacity: 1.0;
                   width: 670px;
-                  margin-left:10px;
+                  margin-left: 10px;
               }
               
               p:hover {
@@ -199,17 +193,18 @@
                   height: 400px;
                   position: relative;
                   opacity: 0.9;
+                  margin-bottom: 19px;
               }
               
               .theHotelPic {
                   height: 430px;
                   opacity: 0.9;
                   width: 670px;
-                  margin-left:10px;
+                  margin-left: 10px;
               }
-
-              .uk-cover-background{
-                height: 400px;
+              
+              .uk-cover-background {
+                  height: 400px;
               }
               
               .room1 {
@@ -396,9 +391,8 @@
                       width: 422px;
                       margin-left: 30px;
                   }
-
-                  .theHotelPic{
-                    height: 300px;
+                  .theHotelPic {
+                      height: 300px;
                   }
                   .room1:hover {
                       height: 250px;
@@ -413,9 +407,8 @@
                       font-size: 16px;
                       line-height: 24px;
                   }
-
-                  html.uk-notouch body div.rightContainer div#theHotel.theHotelDesc{
-                    width: 450px;
+                  html.uk-notouch body div.rightContainer div#theHotel.theHotelDesc {
+                      width: 450px;
                   }
                   small {
                       font-size: 16px;
@@ -500,5 +493,8 @@
                   }
                   .weatherKiten {
                       width: 440px;
+                  }
+                  #rooms{
+                    height: 740px;
                   }
               }
