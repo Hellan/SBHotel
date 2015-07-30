@@ -335,6 +335,12 @@
                   border-radius: 0%;
               }
               
+              .trips {
+                  height: 1100px;
+                  border-top: 1px solid whitesmoke;
+                  border-radius: 0%;
+              }
+              
               #left {
                   float: left;
                   width: 200;
@@ -491,10 +497,14 @@
                       width: 440px;
                       height: 915px;
                   }
+                  .trips {
+                      width: 440px;
+                      height: 1500px;
+                  }
                   .weatherKiten {
                       width: 440px;
                   }
-                  #rooms{
-                    height: 740px;
+                  #rooms {
+                      height: 740px;
                   }
               }
