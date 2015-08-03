@@ -1,10 +1,10 @@
               body {
                   margin: 0 auto;
                   max-width: 690px;
-                  background: #232323;
-                  background: black;
-                  color: #aaaaaa;
+                  color: black;
                   font-family: 'Raleway', sans-serif;
+                  background-image: url("../img/background.jpg");
+                  background-attachment: fixed;
               }
               
               .leftContainer {
@@ -49,7 +49,7 @@
                   width: 100px;
                   top: 0px;
                   position: fixed;
-                  
+                  background: transparent;
               }
               
               ul {
@@ -63,7 +63,7 @@
                   position: relative;
                   margin: 40px 0 0 0;
                   border-radius: 12px;
-                  opacity: 0.88;
+                  opacity: 0.92;
                   -moz-transition: .7s;
                   transition: .7s;
                   -webkit-transition: .7s;
@@ -91,11 +91,12 @@
               h1 {
                   font-family: 'Londrina Sketch', cursive;
                   text-align: center;
-                  font-size: 75px;
-                  color: #aaaaaa;
+                  font-size: 77px;
+                  color: white;
                   margin: 60px 0 0 0;
                   transition: .7s;
                   -webkit-transition: .7s;
+                   -moz-transition: .7s;
               }
               
               h4 {
@@ -106,7 +107,7 @@
               }
               
               a {
-                  color: #bbbbbb;
+                  color: black;
                   text-decoration: none;
                   font-family: 'Raleway', sans-serif;
                   font-weight: bold;
@@ -118,17 +119,21 @@
                   margin: 30px 0 0 0;
                   transition: .7s;
                   -webkit-transition: .7s;
+                  -moz-transition: .7s;
               }
               
               h2 {
                   text-align: center;
-                  color: #bbbbbb;
+                  color: black;
                   margin: 0px 0 70px 0;
                   font-family: 'Dancing Script', cursive;
               }
               
               .uk-active {
-                  color: green;
+                  color: #008B8B;
+                  font-size: 17px;
+                  font-weight: bold;
+                  text-decoration: underline !important;
               }
               
               html body div.theHotelPic h2 {
@@ -148,7 +153,7 @@
               .faceBookAndWifi {
                   width: 670px;
                   height: 250px;
-                  background-color: black;
+                  background: transparent;
                   opacity: 1.0;
                   margin-left: 10px;
               }
@@ -167,10 +172,25 @@
                   margin-left: 10px;
               }
               
-              p:hover {
+              html.uk-notouch body div.rightContainer div#rooms div.room1 p:hover {
                   height: 80px;
-                  -moz-transition: 2s;
-                  -webkit-transition: 2s;
+                  transition: 3s ease-out;
+                  -moz-transition: 3s ease-out;
+                  -webkit-transition: 3s ease-out;
+              }
+              
+              html.uk-notouch body div.rightContainer div#rooms div.room2 p:hover {
+                  height: 80px;
+                  transition: 3s;
+                  -moz-transition: 3s;
+                  -webkit-transition: 3s;
+              }
+              
+              html.uk-notouch body div.rightContainer div#rooms div.room3 p:hover {
+                  height: 80px;
+                  transition: 3s;
+                  -moz-transition: 3s;
+                  -webkit-transition: 3s;
               }
               
               small {
@@ -180,7 +200,9 @@
                   -webkit-transition: display 9s ease-out;
               }
               
-              p {
+              html.uk-notouch body div.rightContainer div#rooms div.room1 p,
+              html.uk-notouch body div.rightContainer div#rooms div.room2 p,
+              html.uk-notouch body div.rightContainer div#rooms div.room3 p {
                   color: rgba(255, 255, 255, 1);
                   background: black;
                   height: 20px;
@@ -198,11 +220,23 @@
                   font-family: 'Raleway', sans-serif;
               }
               
+              p {
+                  color: black;
+                  padding: 10px;
+                  line-height: 28px;
+                  text-align: justify;
+                  position: 100px 1px 1px 0px;
+                  transition: height .5s;
+                  -webkit-transition: height .5s;
+                  -moz-transition: height .5s;
+                  font-family: 'Raleway', sans-serif;
+              }
+              
               .headerPic {
-                  background-image: url("../img/kiten1.jpg");
+                  background-image: url("../img/headerPic.jpg");
                   height: 400px;
                   position: relative;
-                  opacity: 0.9;
+                  opacity: 0.94;
                   margin-bottom: 19px;
               }
               
@@ -307,7 +341,7 @@
                   height: 660px !important;
                   width: 670px;
                   padding-top: 0px !important;
-                  background-color: black !important;
+                  background-image: url("../img/background.jpg");
                   position: absolute;
                   margin-top: 0px !important;
               }
@@ -442,25 +476,30 @@
                       height: 400px !important;
                   }
                   html body div.priceTable table tbody tr td div {
-                      height: 35px;
-                      width: 42px;
+                      height: 40px;
+                      width: 43px;
                       border-width: 0px;
                       border-radius: 0%;
-                      background-color: black;
+                      background-color: transparent;
                       margin-left: 20px;
                       margin-bottom: 15px;
                       text-align: center;
+                      font-size: 12px;
+                      color: black;
+                      font-weight: bold;
                   }
                   .priceTable table tbody tr:first-child {
-                      font-size: 12px;
-                      color: white;
+                      font-size: 13px;
+                      color: black;
                       font-weight: bold;
                       height: 35px;
                       width: 44px;
-                      background-color: black;
+                  }
+                  .tr {
+                      color: black;
                   }
                   #priceList {
-                      height: 1200px;
+                      height: 1220px;
                   }
                   html.uk-notouch body div.rightContainer div#priceList div.priceTable table {
                       font-size: 12px;
@@ -476,7 +515,7 @@
                       padding: 15px 0 10px 0px;
                       margin-top: 60px;
                       font-size: 12px;
-                      height: 40px;
+                      height: 104px;
                       margin-left: 27px;
                   }
                   .theHotelDesc div p {
