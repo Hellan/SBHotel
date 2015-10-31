@@ -51,6 +51,10 @@
                   position: fixed;
                   background: transparent;
               }
+
+              .logo:hover{
+                transform: scale(1.5) translate(-25px);
+              }
               
               ul {
                   list-style: none;
@@ -96,7 +100,7 @@
                   margin: 60px 0 0 0;
                   transition: .7s;
                   -webkit-transition: .7s;
-                   -moz-transition: .7s;
+                  -moz-transition: .7s;
               }
               
               h4 {
@@ -416,6 +420,16 @@
                   height: 320px;
                   border-top: 1px solid whitesmoke;
                   border-radius: 0%;
+              }
+              
+              #fbIcon,
+              #skypeIcon {
+                  transition: 0.9s;
+              }
+              
+              #fbIcon:hover,
+              #skypeIcon:hover {
+                  transform: scale(1.4) translate(-20px);
               }
               
               @media (max-width: 550px) {
